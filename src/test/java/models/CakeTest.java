@@ -19,11 +19,6 @@ public class CakeTest {
         Assertions.assertEquals(expectedSize,cake.getSize());
         Assertions.assertEquals(expectedPrice,cake.getPrice());
 
-
-
-
-
-
     }
 
     @Test
