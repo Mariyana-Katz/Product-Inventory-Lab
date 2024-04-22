@@ -13,7 +13,7 @@ public class MacaronsTest {
         String expectedFilling = "Chocolate";
         int expectedQty = 5;
         float expectedPrice = 10;
-        Macarons macarons  = new Macarons(expectedId, expectedName, expectedFilling, expectedQty, expectedPrice );
+        Macaron macarons  = new Macaron(expectedId, expectedName, expectedFilling, expectedQty, expectedPrice );
 
         Assertions.assertEquals(expectedName, macarons.getName());
         Assertions.assertEquals(expectedId, macarons.getId());
@@ -25,7 +25,7 @@ public class MacaronsTest {
     @Test
     public void setNameTest() {
         // given (1)
-        Macarons macarons = new Macarons(1, "Coconut", "Chocolate",5, 10);
+        Macaron macarons = new Macaron(1, "Coconut", "Chocolate",5, 10);
 
 
         // when (2)
@@ -38,7 +38,7 @@ public class MacaronsTest {
     @ Test
     public void setIdTest() {
         // given (1)
-        Macarons macarons = new Macarons(1, "Coconut", "Chocolate",5, 10);
+        Macaron macarons = new Macaron(1, "Coconut", "Chocolate",5, 10);
 
 
         // when (2)
@@ -51,7 +51,7 @@ public class MacaronsTest {
     @Test
 
     public void setFillingTest() {
-        Macarons macarons = new Macarons(1, "Coconut", "Chocolate",5, 10);
+        Macaron macarons = new Macaron(1, "Coconut", "Chocolate",5, 10);
 
 
         // when (2)
@@ -65,7 +65,7 @@ public class MacaronsTest {
     @Test
 
     public void setQtyTest() {
-        Macarons macarons = new Macarons(1, "Coconut", "Chocolate",5, 10);
+        Macaron macarons = new Macaron(1, "Coconut", "Chocolate",5, 10);
 
 
         // when (2)
@@ -79,7 +79,7 @@ public class MacaronsTest {
     @Test
 
     public void setPriceTest() {
-        Macarons macarons = new Macarons(1, "Coconut", "Chocolate",5, 10);
+        Macaron macarons = new Macaron(1, "Coconut", "Chocolate",5, 10);
 
 
         // when (2)

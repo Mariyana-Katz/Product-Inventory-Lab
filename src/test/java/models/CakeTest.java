@@ -11,10 +11,9 @@ public class CakeTest {
         String expectedFilling = "Chocolate";
         int expectedSize = 30;
         float expectedPrice = 45;
-        Cake cake = new Cake(expectedName, expectedId, expectedFilling, expectedSize, expectedPrice );
+        Cake cake = new Cake(expectedId, expectedName, expectedFilling, expectedSize, expectedPrice );
 
         Assertions.assertEquals(expectedName, cake.getName());
-        Assertions.assertEquals(expectedId, cake.getId());
         Assertions.assertEquals(expectedFilling, cake.getFilling());
         Assertions.assertEquals(expectedSize,cake.getSize());
         Assertions.assertEquals(expectedPrice,cake.getPrice());
@@ -24,7 +23,7 @@ public class CakeTest {
     @Test
     public void setNameTest() {
         // given (1)
-        Cake cake = new Cake("CarrotCake", 1, "butterCream", 20, 40);
+        Cake cake = new Cake(3, "CarrotCake", "butterCream", 20,  40);
 
 
         // when (2)
@@ -34,27 +33,15 @@ public class CakeTest {
         // then (3)
         Assertions.assertEquals(expected, actual);
     }
-   @ Test
-   public void setIdTest() {
-        // given (1)
-        Cake cake = new Cake("CarrotCake", 2, "butterCream", 20, 40);
 
-
-        // when (2)
-        int expected = 2;
-        int actual = cake.getId();
-
-        // then (3)
-        Assertions.assertEquals(expected, actual);
-    }
     @Test
 
     public void setFillingTest() {
-        Cake cake = new Cake("CarrotCake", 1, "Vanilla", 20, 40);
+        Cake cake = new Cake(3, "CarrotCake", "butterCream", 20,  40);
 
 
         // when (2)
-        String expected = "Vanilla";
+        String expected = "butterCream";
         String actual = cake.getFilling();
 
         // then (3)
@@ -64,7 +51,7 @@ public class CakeTest {
     @Test
 
     public void setSizeTest() {
-        Cake cake = new Cake("CarrotCake", 1, "Vanilla", 20, 40);
+        Cake cake = new Cake(3, "CarrotCake", "butterCream", 20,  40);
 
 
         // when (2)
@@ -78,11 +65,11 @@ public class CakeTest {
     @Test
 
     public void setPriceTest() {
-        Cake cake = new Cake("CarrotCake", 1, "Vanilla", 20, 45);
+        Cake cake = new Cake(3, "CarrotCake", "butterCream", 20,  40);
 
 
         // when (2)
-        float expected = 45;
+        float expected = 40;
         float actual = cake.getPrice();
 
         // then (3)

@@ -1,15 +1,15 @@
 package models;
 
-public class Macarons {
+public class Macaron {
     private int id;
     private String name;
     private String filling;
     private int qty;
     private float price;
 
-    public Macarons(){}
+    public Macaron(){}
 
-    Macarons(int id, String name, String filling, int qty, float price){
+    public Macaron(int id, String name, String filling, int qty, float price){
         this.id = id;
         this.name = name;
         this.filling = filling;
